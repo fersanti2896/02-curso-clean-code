@@ -1,18 +1,22 @@
-# Proyecto para practicar
+# Notas Sección 2: Clean Code y Deuda Técnica
+___
 
-Este es un proyecto de Vanilla TypeScript en Vite, para trabajar los ejercicios del curso sobre Principios SOLID y CleanCode.
+#### Deuda Técnica
 
-Clonar o descargar el proyecto y luego:
+Es la falta de calidad en el código, que genera una deuda que repercutirá en costos futuros que usualmente son costos económicos y son producto de tiempo en: 
 
-```
-yarn install
-ó
-npm install
-```
+ - Realizar mantenimientos. 
+ - Refactorizar código.
+ - Comprender el código. 
+ - Adicional en la transferencia de código. 
 
-Para ejecutar el proyecto, simplemente ejecuten
-```
-yarn dev
-ó
-npm run dev
-```
+![deudaTecnica](/src/images/deuda%20tecnica.PNG)
+
+Caer en deuda técnica es normal y a menudo es inevitable. 
+
+La dueda técnica se paga con refactorización, el cual es un proceso que tiene como objetivo mejorar el código sin alterar su comportamiento para que sea más entendible y tolerante a cambios. 
+
+Para la factorización es imprescindible que cuente con pruebas automáticas. 
+
+La mala calidad en el software siempre la acaba paganado o asumiendo alguien, ya se el cliente, proveedor con recursos o el propio desarrollador dedicando tiempo a refactorizar o malgastando tiempo programando sobre un sistema frágil. 
+
