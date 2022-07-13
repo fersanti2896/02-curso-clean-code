@@ -18,5 +18,36 @@ La dueda técnica se paga con refactorización, el cual es un proceso que tiene 
 
 Para la factorización es imprescindible que cuente con pruebas automáticas. 
 
-La mala calidad en el software siempre la acaba paganado o asumiendo alguien, ya se el cliente, proveedor con recursos o el propio desarrollador dedicando tiempo a refactorizar o malgastando tiempo programando sobre un sistema frágil. 
+La mala calidad en el software siempre la acaba pagando o asumiendo alguien, ya se el cliente, proveedor con recursos o el propio desarrollador dedicando tiempo a refactorizar o malgastando tiempo programando sobre un sistema frágil. 
 
+#### Nombres Pronunciables y Expresivos
+
+Mal ❌
+
+    const n        = 53;
+    const tx       = 0.15;
+    const cat      = 'T-Shirts';
+    const ddmmyyyy = new Date('August 15, 1996 00:00:00');
+ 
+Mejor ✅
+
+    const numberOfUnits = 53;
+    const tax           = 0.15;
+    const category      = 'T-Shirts';
+    const birthDate     = new Date('August 15, 1996 00:00:00');
+
+#### Ausencia de Información Técnica en Nombres
+
+Es la implementación que esa clase o interfaz está realizando, se debe evitar que el nombre no contenga información técnica en ellos. 
+
+Mal ❌
+
+    class AbstractUser { };
+    class UserMixin { };
+    class UserImplementation { };
+    interface UserInterface { };
+
+Mejor ✅
+    
+    class User { };
+    interface User { };
