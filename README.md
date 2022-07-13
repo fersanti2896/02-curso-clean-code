@@ -51,3 +51,73 @@ Mejor ✅
     
     class User { };
     interface User { };
+
+#### Nombres de Variables según el Tipo de Dato
+
+__`Arreglos - Arrays`__
+
+Mal ❌
+
+    const fruit = ['manzana', 'platano', 'fresa'];
+
+Mejor ✅
+
+    const fruitList = ['manzana', 'platano', 'fresa'];
+
+O ✅
+    
+    const fruits = ['manzana', 'platano', 'fresa'];
+
+O Mucho Mejor ✅
+
+    const fruitNames = ['manzana', 'platano', 'fresa'];
+
+__`Booleanos - Booleans`__
+
+Mal ❌
+
+    const open     = true;
+    const write    = true;
+    const fruit    = true;
+    const active   = false;
+    const noValues = true;
+    const notEmpty = true;
+
+Mejor ✅
+
+    const isOpen     = true;
+    const canWrite   = true;
+    const hasFruit   = true;
+    const isActive   = false;
+    const hasValues  = false;
+    const isEmpty    = false;
+
+__`Números`__
+
+Mal ❌
+
+    const fruits = 3;
+    const cars   = 10;
+
+Mejor ✅
+
+    const maxFruits   = 5;
+    const minFruits   = 1;
+    const totalFruits = 3;
+    const totalOfCars = 5;
+
+__`Funciones - functions`__
+
+Deben de construirse usando el verbo que representa la acción seguido de un sustantivo, el cual deben ser descriptivos y concisos. 
+
+Mal ❌
+
+    createUserIfNotExists();
+    updateUserIfNotEmpty();
+    sendEmailIfFieldsValid();
+
+Mejor ✅
+
+    createUser();
+    updateUser();
+    seendEmail();
