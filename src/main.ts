@@ -1,4 +1,5 @@
 import './style.css'
+import './clean-code/04-ejer-refactorizar'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
