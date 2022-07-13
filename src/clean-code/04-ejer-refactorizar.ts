@@ -1,13 +1,9 @@
 (() => {
-
-    // Resolver sin la triple condicional dentro del if
-    // includes? arrays?
+    
     function isRedFruit( fruit: string ): boolean {
         return ['manzana', 'cereza', 'ciruela'].includes(fruit) ? true : false;
     }
 
-    // Simplificar esta función
-    // switch? Object literal? validar posibles colores
     function getFruitsByColor( color: string ): string[] {
 
         if ( color === 'red' ) return ['manzana','fresa'];
@@ -19,7 +15,6 @@
         throw Error('the color must be: red, yellow, purple');
     }
 
-    // Simplificar esta función
     let isFirstStepWorking  = true;
     let isSecondStepWorking = true;
     let isThirdStepWorking  = false;
