@@ -122,6 +122,13 @@ Mejor ✅
     updateUser();
     seendEmail();
 
+- Se prioriza que la simplicidad es fundamental de una función. 
+- Las funciones deben tener un tamaño reducido. 
+- Se recomienda hacer funciones de una sola línea sin causar complejidad. 
+- Se recomienda tener máximo 20 líneas de código. 
+- Se debe evitar el uso del `else`.
+- Se debe priorizar el uso de la condicional ternaria. 
+
 #### Clases
 
 Las clases deben estar formadas por frases de sustantivo o por un sustantivo, se debe evitar nombre genéricos. 
