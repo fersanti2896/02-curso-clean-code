@@ -121,3 +121,51 @@ Mejor ✅
     createUser();
     updateUser();
     seendEmail();
+
+#### Clases
+
+Las clases deben estar formadas por frases de sustantivo o por un sustantivo, se debe evitar nombre genéricos. 
+
+El nombre es lo má importate de la clase y usar UpperCamelCase.
+
+Mal ❌
+
+    class Manager {};
+    class Data {};
+    class Info {};
+    class Individual {};
+    class Processor {};
+    class SpecialMonsterView {};
+
+
+Más palabas `!==` mejor nombre.
+
+    class SpecialViewingCaseMonsterManagerEventsHandlerActivitySingleton {};
+
+Para determinar si es un buen nombre a la clase: 
+
+1. ¿Qué hace exactamente la clase?
+2. ¿Cómo exactamente esta clase realica la tarea?
+3. ¿Hay algo específico sobre su ubicación? 
+
+#### Nombre de Funciones, Argumentos y Parámetros
+
+Se recomienda que en una función tenga máximo 3 parámetro posicionales.
+
+Bien ✅
+
+    function sendEmail( toWhom: string, from: string, body: string ): boolean {};
+
+Mal ❌
+
+    function sendEmail( 
+        toWhom : string, 
+        from   : string, 
+        body   : string,
+        subject: string, 
+        apikey : string
+    ): boolean {};
+
+Otro ejemplo:
+
+![parametros](/src/images/parametros.PNG)
